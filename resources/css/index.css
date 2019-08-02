@@ -2,3 +2,80 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  margin: 0;
+  background: #090819;
+  font-weight: 300;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: black;
+  font-family: Signika, sans-serif;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+.logo {
+  float: left;
+  padding: 10px auto;
+  width: 150px;
+  height: 150px;
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 120px;
+  padding-top: 70px;
+  font-size: 1.35rem;
+
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #2e3890;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: white;
+
+  position: absolute;
+  top: 0;
+
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
