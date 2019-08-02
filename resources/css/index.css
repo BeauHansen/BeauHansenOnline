@@ -5,8 +5,17 @@
 
 body {
   margin: 0;
-  background: #090819;
   font-weight: 300;
+}
+
+main {
+  background-image: url("../images/TechyDark.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  color: white;
 }
 
 .container {
@@ -17,6 +26,8 @@ body {
 header {
   background: black;
   font-family: Signika, sans-serif;
+  position: fixed;
+  width: 100%;
 }
 
 header::after {
