@@ -74,6 +74,10 @@ nav a {
   width: 25px;
 }
 
+#github {
+  display: hidden;
+}
+
 
 
 nav a.link:hover {
