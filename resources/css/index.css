@@ -8,16 +8,6 @@ body {
   font-weight: 300;
 }
 
-main {
-  background-image: url("../images/TechyDark.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-  color: white;
-}
-
 .container {
   width: 80%;
   margin: 0 auto;
@@ -28,6 +18,7 @@ header {
   font-family: Signika, sans-serif;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 header::after {
@@ -46,6 +37,7 @@ header::after {
 
 nav {
   float: left;
+  overflow: hidden;
 }
 
 nav ul {
@@ -89,4 +81,54 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%;
+}
+
+main {
+  background-image: url("../images/TechyDark.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  color: white;
+  font-family: monospace, Courier, sand-serif;
+  width: 100%;
+  text-align: center;
+}
+
+.center-piece-container {
+}
+
+#center-piece {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  align-content: center;
+  top: 200px;
+  margin: 0 auto;
+}
+
+#main-logo {
+  margin: 0 auto;
+  text-align: center;
+  height: 50%;
+  width: 50%;
+}
+
+.caption {
+  margin: 0 auto;
+  font-size: 1.0rem;
+}
+
+p {
+  position: relative;
+  display: inline;
+  top: 300px;
+  width: 70%;
+}
+
+#introduction
+{
+  position: relative;
 }
